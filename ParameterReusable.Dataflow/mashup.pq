@@ -1,7 +1,8 @@
-[StagingDefinition = [Kind = "FastCopy"]]
+[DefaultOutputDestinationSettings = [DestinationDefinition = [Kind = "Reference", QueryName = "DefaultDestination", IsNewTarget = true], UpdateMethod = [Kind = "Append"], DestinationTypeSettings = [Kind = "Table"]], StagingDefinition = [Kind = "FastCopy"]]
 section Section1;
 shared WorkspaceId = "28b917e5-faab-4cd7-bdb4-1b3502325f20" meta [IsParameterQuery = true, IsParameterQueryRequired = false, Type = type text];
 shared LakehouseId = "497f4de7-7fbb-48f7-93ee-ffea1639a105" meta [IsParameterQuery = true, IsParameterQueryRequired = false, Type = type text];
+[BindToDefaultDestination = true]
 shared dimension_city = let
   Source = Lakehouse.Contents(null),
   Navigation = Source{[workspaceId = WorkspaceId]}[Data],
@@ -11,3 +12,4 @@ shared dimension_city = let
 in
   #"Filtered rows";
 shared Territory = "Mideast" meta [IsParameterQuery = true, IsParameterQueryRequired = true, Type = type text];
+shared DefaultDestination = Fabric.Warehouse([CreateNavigationProperties = false]){[workspaceId = "28b917e5-faab-4cd7-bdb4-1b3502325f20"]}[Data]{[warehouseId = "e301198f-7f74-4f68-97b0-2c195a28e063"]}[Data];

@@ -25,6 +25,12 @@
       "queryId": "da3bea4c-a72f-4127-8a1c-8d1ddc4b546a",
       "queryName": "Territory",
       "loadEnabled": false
+    },
+    "DefaultDestination": {
+      "queryId": "bb76bdaf-f761-40b3-a1ff-aa7c00d960dd",
+      "queryName": "DefaultDestination",
+      "isHidden": true,
+      "loadEnabled": false
     }
   },
   "connections": [
@@ -32,6 +38,11 @@
       "path": "Lakehouse",
       "kind": "Lakehouse",
       "connectionId": "{\"ClusterId\":\"880bad63-bb7f-4fa0-b404-bca94c7f8e67\",\"DatasourceId\":\"a89ef20e-20b1-4ea8-b1ca-983c2114de38\"}"
+    },
+    {
+      "path": "Warehouse",
+      "kind": "Warehouse",
+      "connectionId": "{\"ClusterId\":\"880bad63-bb7f-4fa0-b404-bca94c7f8e67\",\"DatasourceId\":\"a3e00bb6-e428-481c-9add-7090a6dd4f95\"}"
     }
   ]
 }
