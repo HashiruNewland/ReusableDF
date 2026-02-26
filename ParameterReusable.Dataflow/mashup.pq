@@ -12,4 +12,5 @@ shared dimension_city = let
 in
   #"Filtered rows";
 shared Territory = "Mideast" meta [IsParameterQuery = true, IsParameterQueryRequired = true, Type = type text];
-shared DefaultDestination = Fabric.Warehouse([CreateNavigationProperties = false]){[workspaceId = "28b917e5-faab-4cd7-bdb4-1b3502325f20"]}[Data]{[warehouseId = "e301198f-7f74-4f68-97b0-2c195a28e063"]}[Data];
+shared DefaultDestination = Fabric.Warehouse([CreateNavigationProperties = false]){[workspaceId = workspaceId]}[Data]{[warehouseId = WarehouseId]}[Data];
+
