@@ -22,6 +22,12 @@
     "PaymentType": {
       "queryId": "45020975-7731-4ecd-9439-c1341f321306",
       "queryName": "PaymentType"
+    },
+    "Trip_DataDestination": {
+      "queryId": "f48e0a28-646a-44b3-898f-c28416225878",
+      "queryName": "Trip_DataDestination",
+      "isHidden": true,
+      "loadEnabled": false
     }
   },
   "connections": [
