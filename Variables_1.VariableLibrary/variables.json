@@ -1,0 +1,29 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/variableLibrary/definition/variables/1.0.0/schema.json",
+  "variables": [
+    {
+      "name": "WorkspaceId",
+      "note": "",
+      "type": "Guid",
+      "value": "28b917e5-faab-4cd7-bdb4-1b3502325f20"
+    },
+    {
+      "name": "LakehouseId",
+      "note": "",
+      "type": "Guid",
+      "value": "497f4de7-7fbb-48f7-93ee-ffea1639a105"
+    },
+    {
+      "name": "WarehouseId",
+      "note": "",
+      "type": "Guid",
+      "value": "e301198f-7f74-4f68-97b0-2c195a28e063"
+    },
+    {
+      "name": "PaymentType",
+      "note": "",
+      "type": "String",
+      "value": "Cash"
+    }
+  ]
+}

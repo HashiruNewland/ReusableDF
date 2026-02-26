@@ -1,0 +1,35 @@
+{
+  "formatVersion": "202502",
+  "computeEngineSettings": {
+    "allowModernEvaluationEngine": true
+  },
+  "name": "VariableReusableDF",
+  "queryGroups": [],
+  "documentLocale": "en-US",
+  "queriesMetadata": {
+    "Trip": {
+      "queryId": "9e22ce47-742d-42e1-812b-acf9dc67a865",
+      "queryName": "Trip"
+    },
+    "WorkspaceId": {
+      "queryId": "74611ecb-dfa5-43a8-b12f-b292a8b018ba",
+      "queryName": "WorkspaceId"
+    },
+    "WarehouseId": {
+      "queryId": "fc5686ae-99ae-4378-aa76-5935d76f7693",
+      "queryName": "WarehouseId"
+    },
+    "PaymentType": {
+      "queryId": "45020975-7731-4ecd-9439-c1341f321306",
+      "queryName": "PaymentType"
+    }
+  },
+  "connections": [
+    {
+      "path": "Warehouse",
+      "kind": "Warehouse",
+      "connectionId": "{\"ClusterId\":\"880bad63-bb7f-4fa0-b404-bca94c7f8e67\",\"DatasourceId\":\"a3e00bb6-e428-481c-9add-7090a6dd4f95\"}"
+    }
+  ],
+  "parametric": true
+}
