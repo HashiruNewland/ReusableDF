@@ -23,8 +23,9 @@ in
   Source;
 shared Trip_DataDestination = let
   Pattern = Fabric.Warehouse([HierarchicalNavigation = null, CreateNavigationProperties = false]),
-  Navigation_1 = Pattern{[workspaceId = "28b917e5-faab-4cd7-bdb4-1b3502325f20"]}[Data],
-  Navigation_2 = Navigation_1{[warehouseId = "e301198f-7f74-4f68-97b0-2c195a28e063"]}[Data],
+  Navigation_1 = Pattern{[workspaceId = WorkspaceId]}[Data],
+  Navigation_2 = Navigation_1{[warehouseId = WarehouseId"]}[Data],
   TableNavigation = Navigation_2{[Item = "TripReusable", Schema = "dbo"]}?[Data]?
 in
   TableNavigation;
+
