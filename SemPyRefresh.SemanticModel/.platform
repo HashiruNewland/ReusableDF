@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "SemanticModel",
+    "displayName": "SemPyRefresh"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "978baa19-7413-ab71-4da1-b5e0f786f0c2"
+  }
+}
